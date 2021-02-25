@@ -41,7 +41,7 @@ use a second/dedicated terminal so that you can keep this command running.*
 
 ### Deploy
 
-This guide is deployed to [GitHub Pages](https://pages.github.com/)at 
+This guide is deployed to [GitHub Pages](https://pages.github.com/) at
 <https://ESIPFed.github.io/esds-community-guide/>. The website is served out of the 
 special `gh-pages` branch of this repository and deployment is handled automatically 
 with the [`deploy_to_github_io.yml`](.github/workflows/deploy_to_github_io.yml) 
