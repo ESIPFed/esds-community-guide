@@ -19,6 +19,7 @@ markdown_extensions:
 
 nav:
   - Home: index.md
+  - EOSDIS Contribution Guide: contribution-guide/index.md
   - Code of Conduct: CODE_OF_CONDUCT.md
 
 plugins:
