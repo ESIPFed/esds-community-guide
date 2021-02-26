@@ -29,7 +29,7 @@ jobs:
       - name: test build of website
         if: github.ref != 'refs/heads/main'
         run: |
-          mkdocs build --verbose
+          mkdocs build
 
       - name: deploy to github.io
         if: github.ref == 'refs/heads/main'
