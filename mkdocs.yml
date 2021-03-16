@@ -1,0 +1,27 @@
+site_name: Community Development Best Practices
+site_url: https://ESIPFed.github.io/esds-community-guide/
+site_author: Community Development Best Practices Working Group
+
+theme:
+  name: material
+  features:
+    - navigation.instant
+
+repo_url: https://github.com/ESIPFed/esds-community-guide
+
+markdown_extensions:
+  - toc:
+      permalink: true
+      toc_depth: 3
+  - admonition
+  - pymdownx.highlight
+  - pymdownx.superfences
+
+nav:
+  - Home: index.md
+  - EOSDIS Contribution Guide: contribution-guide/index.md
+  - Code of Conduct: CODE_OF_CONDUCT.md
+
+plugins:
+  - search
+  - section-index
