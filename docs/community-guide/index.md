@@ -27,5 +27,7 @@ One of the best mechanisms for building and fostering a growing community is to 
 ## Tools
 ## Templates
 ### Emails
-### Pull Requets
+### Pull Requests
 ### READMEs
+## Resources
+- [Polite Technology](https://polite.technology/preview)
