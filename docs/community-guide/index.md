@@ -155,7 +155,42 @@ Possible conclusion: This is an essential project to many but it is difficult to
 
 ### Benchmarks
 
+---
+
 ## Tools
+We have several tools that we use for earth data products. We recommend using this common list of apps and plugins to help you along with your projects.
+
+### Platforms/GUIs
+- **Browser:** The preferred browser for Earthdata products is [Google Chrome](https://www.google.com/chrome/downloads/) :octicons-link-external-16:.
+- **Git:** An open-source version control system for development projects. We use this to set up projects in GitHub. To learn more about how it works go to [Git](https://git-scm.com/) :octicons-link-external-16:.
+- **GitHub:** A code repository and development platform that helps us build projects. To get started with GitHub go to [GitHub Docs](https://docs.github.com/en/get-started) :octicons-link-external-16:.
+
+### Command Prompt/Terminal
+A text-based command line tool on your Mac, PC, or Linux systems. There are third-party command line tools that you can use or integrate with your IDE.
+
+### Integrated Development Environments (IDEs)
+- **Jupyter Notebook:** A web-based development environment used for data science and computing. Visit [Jupyter Notebook](https://jupyter.org/) :octicons-link-external-16:.
+- **PyCharm:** A specialized IDE for Python programmers. Visit [PyCharm](https://www.jetbrains.com/pycharm/) :octicons-link-external-16:.
+- **Visual Studio Code:** A code editor for building and debugging apps. Visit [Visual Studio Code](https://code.visualstudio.com/) :octicons-link-external-16:.
+
+### What To Build With?
+When choosing frameworks, APIs, environments, and libraries it helps to assess the scalability and viability of these tools in order to future-proof and maintain a product. Below is a list of what we are currently using.
+
+#### Languages
+- JavaScript
+- Python
+- Ruby
+
+#### Frameworks/Libraries
+- Rails
+- React
+
+#### Cloud Services
+- AWS
+- Azure
+
+---
+
 ## Templates
 ### Emails
 ### Pull Requests
