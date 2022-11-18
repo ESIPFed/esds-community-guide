@@ -162,3 +162,25 @@ Possible conclusion: This is an essential project to many but it is difficult to
 ### READMEs
 ## Resources
 - [Polite Technology](https://polite.technology/preview)
+
+## Success Stories
+
+### Pangeo
+
+#### What is Pangeo?
+
+[Pangeo](https://pangeo.io) is first and foremost a community of people working collaboratively to develop open source software and infrastructure to enable open science, specifically focused on big data. The community has pioneered the use of large scale interactive cloud computing.  
+
+#### Origin story
+
+In large part, Pangeo grew out of the [Xarray](https://xarray.dev) and [Dask](https://dask.org) projects. Xarray is a Python package for working with multidimensional arrays and datasets and Dask is a Python library for parallel computing. In 2016, a small group of developers and “super users” of these projects convened a [workshop](https://rabernat.github.io/aospy-workshop/) at Columbia University to discuss the idea of a community project for large scale geoscientific data analysis. Out of this meeting came the name and mission of the Pangeo Project. In the months and years since, the Pangeo community has grown to include a large number of scientists, software developers, and infrastructure providers. 
+
+#### Why has Pangeo been successful?
+
+Pangeo’s success can be attributed to five themes:
+
+1. **Clear mission and brand**: Pangeo grew up to solve a specific set of problems. Its mission statement was simultaneously ambitious and inclusive, and its branding (name, logo, design concepts) facilitated its organic growth.  
+1. **Community focus**: Pangeo’s approach to community engagement was intentionally open and collaborative. Technical conversations were held in the open on [GitHub](https://github.com/pangeo-data), in regular [community meetings](https://pangeo.io/meeting-notes.html) that were open to anyone. Over time, Pangeo added specific user support channels like [discourse.pangeo.io](https://discourse.pangeo.io/) to crowd source questions and solutions.
+1. **Use case driven development**: The Pangeo community was engaged in the project to solve specific challenges within active areas of geoscientific research. Pangeo helped turn pain points in big data workflows into technical problems that open source software projects could help solve. [Here’s](https://github.com/dask/distributed/issues/6360) an example of the kind of interaction this approach fostered, leading to big steps forward for the open source project and motivating research project.
+1. **Integrate and improve whenever possible**: Rather than reflexively developing new projects to solve problems, the Pangeo approach was to first attempt to [improve and integrate existing tools](https://medium.com/pangeo/the-pangeo-pattern-9a81ca4bad42). This resulted in the incremental improvements across the scientific Python ecosystem and avoided further fragmentation of the community.
+1. **Multifunctional development teams**: The Pangeo community is made up of scientists, software engineers, and data/infrastructure providers. When working on complex problems that span multiple software libraries and pieces of infrastructure, having a multifunctional team engaged on a tough problem is key. [This issue](https://github.com/dask/distributed/issues/6560) on the Distributed issue tracker exemplifies how productive engagements like this can be.
