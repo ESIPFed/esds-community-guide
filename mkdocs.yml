@@ -14,6 +14,7 @@ markdown_extensions:
       permalink: true
       toc_depth: 3
   - admonition
+  - footnotes
   - pymdownx.highlight
   - pymdownx.superfences
 
