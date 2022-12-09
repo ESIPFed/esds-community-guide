@@ -128,7 +128,14 @@ Given this, it would seem prudent to measure as many of these indicators as poss
 None of the suggestions below should be used in isolation as a measure. Potential pitfalls of that practice may be itemized for each suggestion below.
 
 ### How vibrant is your community?
-Blurb neeed here!
+> *vi·brant*, adjective: **full of energy and enthusiasm**. Example: "a vibrant cosmopolitan city"
+
+Enthusiasm in this context could be measured by,
+- Attendance at events and ceremonies
+- Volume of communications (Slack posts, mailing lists messages)
+- New feature requests
+
+As these metrics are mapped over time a gauge of the change in vibrancy can be measured.
 
 #### Evolution
 Is your project changing with time or stagnant?
