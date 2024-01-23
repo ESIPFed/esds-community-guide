@@ -1,20 +1,26 @@
 # Community Guide
 
 ## Overview
-The ESDSWG Community Guide is a collection of best-practices and resources for running successful open source communities around NASA ACCESS and other NASA open source software projects. While the Open Source Guide covers the ins and outs of setting up the systems that manage the code, documentation, and user input of a software project--this guide is designed to help you take those systems and build a real community around them.
 
-Our goals are aligned with those of NASA's Science Mission Directorate policy ['SPD-41a: Scientific Information Policy for the Science Mission Directorate'](https://science.nasa.gov/spd-41/) that provides guidance on the open sharing of publications, data, and software created in the pursuit of scientific knowledge. We aim to extend this guidance to the domain of science software.
-Those policy changes that apply to science software are as follows,
+The ESDSWG Community Guide is a collection of best-practices and resources for running successful open source communities around NASA ACCESS and other NASA open source software projects. While the Open Source Guide covers the ins and outs of setting up the systems that manage the code, documentation, and user input of a software project - this guide is designed to help you take those systems and build a real community around them.
+
+### Relationship to other policies
+
+Our goals are aligned with those of NASA's Science Mission Directorate policy [SPD-41a: Scientific Information Policy for the Science Mission Directorate](https://science.nasa.gov/spd-41/) that provides guidance on the open sharing of publications, data, and software created in the pursuit of scientific knowledge. We aim to extend this guidance to the domain of science software.
+Those policy changes that apply to science software are as follows:
 
 - Research data and **software** are shared at the time of publication or the end of the funding award.  
-- Mission data are released as soon as possible, and **unrestricted mission software is developed openly**.\
+- Mission data are released as soon as possible, and **unrestricted mission software is developed openly**.
 
-Policy specific to earth science in this domain,
+Policy specific to earth science in this domain:
+
 - [Earth Science Open Data, Services, and Software Policies](https://www.earthdata.nasa.gov/engage/open-data-services-and-software)
 - [ESDS Open Source Software Policy](https://www.earthdata.nasa.gov/engage/open-data-services-and-software/esds-open-source-policy) 
 
-### Core Team
-- Authors and Editors
+### Community Guide Authors
+
+This guide is the collective effort of many individuals during multiple ESDSWG periods. See the [Community Development Best Practices meeting notes](https://wiki.earthdata.nasa.gov/display/ESDSWG/Community+Development+Best+Practices+Working+Group) on the EarthData wiki for a full list of contributors.
+
 ### Values
 #### Transparency
 Projects should be transparent to the community.
