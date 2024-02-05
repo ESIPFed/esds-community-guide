@@ -271,7 +271,7 @@ Various online options for storytelling and collaboration are at your disposal. 
 ![<a href="https://storyset.com/online">Online illustrations by Storyset</a>](../assets/images/Open%20source-cuate-no-code.png)
 
 ### Community Gathering
-As you know, communication is essential. Today’s world allows you to meet remotely. Things to consider when choosing a community space are if the application promotes transparency, clarity, and inclusivity.
+As you know, communication is essential. Today’s world allows you to meet remotely. When choosing a community space, consider if the application promotes transparency, clarity, and inclusivity.
 
 - Discord
 - Discourse
@@ -279,7 +279,7 @@ As you know, communication is essential. Today’s world allows you to meet remo
 - Slack
 
 ### Video Conferencing
-While the community grows you may feel that communicating and collaborating through video and immersive conferencing tools. 
+While the community grows you may feel that communicating and collaborating through video and immersive conferencing tools are best for what you are trying to work on together.
 
 - Google Meet
 - Microsoft Teams/Skype
