@@ -219,7 +219,13 @@ Possible conclusion: This is an essential project to many but it is difficult to
 ---
 
 ## Tools
-We have several tools that we use for earth data products. We recommend using this common list of apps and plugins to help you along with your projects.
+![<a href="https://storyset.com/technology">Technology illustrations by Storyset</a>](../assets/images/Devices-cuate.png)
+
+To facilitate an open-source philosophy, technology can give you the agency to foster collaboration, innovation, and communication. When using and building tools, frameworks, and applications, consider how they augment, promote, and enhance the community.
+
+We have several tools that we use for earth data products. We recommend using this common list of apps and plugins to help you with your projects.
+
+### ^^Utilization^^
 
 ### Platforms/GUIs
 - **Browser:** The preferred browser for Earthdata products is [Google Chrome](https://www.google.com/chrome/downloads/) :octicons-link-external-16:.
@@ -233,6 +239,51 @@ A text-based command line tool on your Mac, PC, or Linux systems. There are thir
 - **Jupyter Notebook:** A web-based development environment used for data science and computing. Visit [Jupyter Notebook](https://jupyter.org/) :octicons-link-external-16:.
 - **PyCharm:** A specialized IDE for Python programmers. Visit [PyCharm](https://www.jetbrains.com/pycharm/) :octicons-link-external-16:.
 - **Visual Studio Code:** A code editor for building and debugging apps. Visit [Visual Studio Code](https://code.visualstudio.com/) :octicons-link-external-16:.
+
+### Extensions/Plugins
+You may need to enhance an experience or ability within a tool and there are vast options to partake. 
+
+![<a href="https://storyset.com/web">Web illustrations by Storyset</a>](../assets/images/Programming-amico.png){ width="300" }
+
+### ^^Communication and Collaboration^^
+
+There are a myriad of various tools to select for engaging with other community members and online participants.
+
+### Content Creation
+When deciding which tool to use for documentation or creating content you need to determine the scale and the audience as well as the amount of effort to learn/use the application.
+
+- Atlassian (Confluence, Trello)
+- Docusaurus
+- Google Workspace (Docs, Sheets, Slides, Forms)
+- Jekyll
+- MkDocs
+- Notion
+- Sphinx
+
+### Visualization
+Various online options for storytelling and collaboration are at your disposal. You want to consider some popular and intuitive applications like the following:
+
+- Figma
+- Lucidchart
+- Miro
+- Mural
+
+![<a href="https://storyset.com/online">Online illustrations by Storyset</a>](../assets/images/Open%20source-cuate-no-code.png)
+
+### Community Gathering
+As you know, communication is essential. Today’s world allows you to meet remotely. Things to consider when choosing a community space are if the application promotes transparency, clarity, and inclusivity.
+
+- Discord
+- Discourse
+- Gitter
+- Slack
+
+### Video Conferencing
+While the community grows you may feel that communicating and collaborating through video and immersive conferencing tools. 
+
+- Google Meet
+- Microsoft Teams/Skype
+- Zoom
 
 ### What To Build With?
 When choosing frameworks, APIs, environments, and libraries it helps to assess the scalability and viability of these tools in order to future-proof and maintain a product. Below is a list of what we are currently using.
@@ -249,6 +300,29 @@ When choosing frameworks, APIs, environments, and libraries it helps to assess t
 #### Cloud Services
 - AWS
 - Azure
+- Google Cloud
+
+#### Testing
+- JetBrains
+- Selenium
+
+![<a href="https://storyset.com/technology">Technology illustrations by Storyset</a>](../assets/images/Developer%20activity.png){ width="300" }
+
+### ^^Creating Tools^^
+
+### Innovation
+Usage will constantly change with the industry standards, usage methodology, and technology and so will your approach to developing tools.
+
+### Scalability
+Understanding the impact of the size and the roadmap for your project helps you successfully progress as you contribute to the community.
+
+### Accessibility
+When interacting with other contributors we suggest that you use methods that help empower a cohesive and inclusive culture.
+
+### Future Proofing
+As a developer community, we should not rely heavily on tools but allow them to help us where needed. That thought should be kept in mind when building solutions for others. We need access to what is necessary at the moment and be able to audit and consolidate later if need be. This practice keeps the community and its resources relevant and accountable.
+
+![<a href="https://storyset.com/work">Work illustrations by Storyset</a>](../assets/images/Innovation-amico.png){ align=right width="300" }
 
 ---
 
