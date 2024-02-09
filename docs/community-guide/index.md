@@ -322,7 +322,9 @@ When interacting with other contributors we suggest that you use methods that he
 ### Future Proofing
 As a developer community, we should not rely heavily on tools but allow them to help us where needed. That thought should be kept in mind when building solutions for others. We need access to what is necessary at the moment and be able to audit and consolidate later if need be. This practice keeps the community and its resources relevant and accountable.
 
-![<a href="https://storyset.com/work">Work illustrations by Storyset</a>](../assets/images/Innovation-amico.png){ align=right width="300" }
+![<a href="https://storyset.com/work">Work illustrations by Storyset</a>](../assets/images/Innovation-amico.png){ width="300" }
+
+The overall thing to consider when using or making tools is how they will help your development community grow, stay current, navigate opportunities, and promote contribution.
 
 ---
 
