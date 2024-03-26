@@ -1,0 +1,1704 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="Community Development Best Practices Working Group">
+      
+      
+        <link rel="canonical" href="https://ESIPFed.github.io/esds-community-guide/contribution-guide/">
+      
+      
+        <link rel="prev" href="../community-guide/">
+      
+      
+        <link rel="next" href="../CODE_OF_CONDUCT/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.15">
+    
+    
+      
+        <title>Contribution Guide - Community Development Best Practices</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.7e359304.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#eosdis-general-open-source-software-collaboration-and-contribution-process" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Community Development Best Practices" class="md-header__button md-logo" aria-label="Community Development Best Practices" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Community Development Best Practices
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Contribution Guide
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/ESIPFed/esds-community-guide" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Community Development Best Practices" class="md-nav__button md-logo" aria-label="Community Development Best Practices" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Community Development Best Practices
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/ESIPFed/esds-community-guide" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../community-guide/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Community Guide
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Contribution Guide
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Contribution Guide
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#eosdis-general-open-source-software-collaboration-and-contribution-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      EOSDIS General Open Source Software Collaboration and Contribution Process
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="EOSDIS General Open Source Software Collaboration and Contribution Process">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#working-draft-october-2020" class="md-nav__link">
+    <span class="md-ellipsis">
+      WORKING DRAFT: October 2020
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#goals-of-this-document" class="md-nav__link">
+    <span class="md-ellipsis">
+      Goals of this Document
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-projects-are-appropriate-for-this-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      What Projects are Appropriate for this Process?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="What Projects are Appropriate for this Process?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#assumptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Assumptions
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#code-contribution-roles-and-responsibilities" class="md-nav__link">
+    <span class="md-ellipsis">
+      Code Contribution: Roles and Responsibilities
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Code Contribution: Roles and Responsibilities">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#users" class="md-nav__link">
+    <span class="md-ellipsis">
+      Users
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#project-management-board-pmb" class="md-nav__link">
+    <span class="md-ellipsis">
+      Project Management Board (PMB)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#project-manager-pm" class="md-nav__link">
+    <span class="md-ellipsis">
+      Project Manager (PM)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#project-leadership-team-plt" class="md-nav__link">
+    <span class="md-ellipsis">
+      Project Leadership Team (PLT)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#technical-leadership-team-tlt" class="md-nav__link">
+    <span class="md-ellipsis">
+      Technical Leadership Team (TLT)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#committers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Committers
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contributors" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contributors
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#external-contributions-community-engagement-and-outreach" class="md-nav__link">
+    <span class="md-ellipsis">
+      External Contributions, Community Engagement and Outreach
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#communication" class="md-nav__link">
+    <span class="md-ellipsis">
+      Communication
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Documentation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Testing
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deployment-environments-and-releases" class="md-nav__link">
+    <span class="md-ellipsis">
+      Deployment Environments and Releases
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#code-of-conduct" class="md-nav__link">
+    <span class="md-ellipsis">
+      Code of Conduct
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#security" class="md-nav__link">
+    <span class="md-ellipsis">
+      Security
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#project-closeout" class="md-nav__link">
+    <span class="md-ellipsis">
+      Project Closeout
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-scenarios-and-faq" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Scenarios and FAQ
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#acronymsglossary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Acronyms/Glossary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#additional-resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      Additional Resources
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#relationship-project-roles-and-safe-roles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Relationship Project Roles and SAFe roles
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#responsible-team" class="md-nav__link">
+    <span class="md-ellipsis">
+      Responsible Team
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Notes
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CODE_OF_CONDUCT/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Code of Conduct
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#eosdis-general-open-source-software-collaboration-and-contribution-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      EOSDIS General Open Source Software Collaboration and Contribution Process
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="EOSDIS General Open Source Software Collaboration and Contribution Process">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#working-draft-october-2020" class="md-nav__link">
+    <span class="md-ellipsis">
+      WORKING DRAFT: October 2020
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#goals-of-this-document" class="md-nav__link">
+    <span class="md-ellipsis">
+      Goals of this Document
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-projects-are-appropriate-for-this-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      What Projects are Appropriate for this Process?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="What Projects are Appropriate for this Process?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#assumptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Assumptions
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#code-contribution-roles-and-responsibilities" class="md-nav__link">
+    <span class="md-ellipsis">
+      Code Contribution: Roles and Responsibilities
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Code Contribution: Roles and Responsibilities">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#users" class="md-nav__link">
+    <span class="md-ellipsis">
+      Users
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#project-management-board-pmb" class="md-nav__link">
+    <span class="md-ellipsis">
+      Project Management Board (PMB)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#project-manager-pm" class="md-nav__link">
+    <span class="md-ellipsis">
+      Project Manager (PM)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#project-leadership-team-plt" class="md-nav__link">
+    <span class="md-ellipsis">
+      Project Leadership Team (PLT)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#technical-leadership-team-tlt" class="md-nav__link">
+    <span class="md-ellipsis">
+      Technical Leadership Team (TLT)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#committers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Committers
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contributors" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contributors
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#external-contributions-community-engagement-and-outreach" class="md-nav__link">
+    <span class="md-ellipsis">
+      External Contributions, Community Engagement and Outreach
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#communication" class="md-nav__link">
+    <span class="md-ellipsis">
+      Communication
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Documentation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Testing
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deployment-environments-and-releases" class="md-nav__link">
+    <span class="md-ellipsis">
+      Deployment Environments and Releases
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#code-of-conduct" class="md-nav__link">
+    <span class="md-ellipsis">
+      Code of Conduct
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#security" class="md-nav__link">
+    <span class="md-ellipsis">
+      Security
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#project-closeout" class="md-nav__link">
+    <span class="md-ellipsis">
+      Project Closeout
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-scenarios-and-faq" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Scenarios and FAQ
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#acronymsglossary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Acronyms/Glossary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#additional-resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      Additional Resources
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#relationship-project-roles-and-safe-roles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Relationship Project Roles and SAFe roles
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#responsible-team" class="md-nav__link">
+    <span class="md-ellipsis">
+      Responsible Team
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Notes
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+  <h1>Contribution Guide</h1>
+
+<!-----
+NEW: Check the "Suppress top comment" option to remove this info from the output.
+
+Conversion time: 3.878 seconds.
+
+
+Using this Markdown file:
+
+1. Paste this output into your source file.
+2. See the notes and action items below regarding this conversion run.
+3. Check the rendered output (headings, lists, code blocks, tables) for proper
+   formatting and use a linkchecker before you publish this page.
+
+Conversion notes:
+
+* Docs to Markdown version 1.0β29
+* Thu Feb 25 2021 22:43:48 GMT-0800 (PST)
+* Source doc: Copy of EOSDIS General Open Source Software Collaboration and Contribution Process
+* Tables are currently converted to HTML tables.
+
+----->
+
+<p><strong>NASA ESDIS</strong></p>
+<h2 id="eosdis-general-open-source-software-collaboration-and-contribution-process">EOSDIS General Open Source Software Collaboration and Contribution Process<a class="headerlink" href="#eosdis-general-open-source-software-collaboration-and-contribution-process" title="Permanent link">&para;</a></h2>
+<h3 id="working-draft-october-2020"><strong>WORKING DRAFT: October 2020</strong><a class="headerlink" href="#working-draft-october-2020" title="Permanent link">&para;</a></h3>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
+<p>This document is intended to serve as guidance for parties interested in collaborating and contributing code,
+documentation, and examples to the EOSDIS software projects. It is expected that this document serves as a blueprint for
+existing forthcoming open source software development efforts undertaken by the EOSDIS community.</p>
+<p>This process is inspired and influenced by “the Apache Way” practiced by
+the <a href="https://www.apache.org/">Apache Software Foundation</a>  but is tailored to EOSDIS specific needs and communication
+patterns.</p>
+<h2 id="goals-of-this-document">Goals of this Document<a class="headerlink" href="#goals-of-this-document" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Establish criteria for projects to be considered for this process</li>
+<li>Establish roles and responsibilities for contributions to NASA EOSDIS software</li>
+<li>Identify key communication flows, as well as information on documentation, testing and deployment paradigms</li>
+<li>Outline high-level process expectations for contributions and provide example process flows for these contributions</li>
+</ol>
+<h2 id="what-projects-are-appropriate-for-this-process">What Projects are Appropriate for this Process?<a class="headerlink" href="#what-projects-are-appropriate-for-this-process" title="Permanent link">&para;</a></h2>
+<p>A <em>project</em> in this context represents a system of software elements that are being developed to fulfill a system need
+for EOSDIS (e.g. the Common Metadata Repository, Cumulus, GIBS). The word <em>system</em> may be used throughout this document
+interchangeably with the word <em>project</em>.</p>
+<h3 id="assumptions">Assumptions<a class="headerlink" href="#assumptions" title="Permanent link">&para;</a></h3>
+<p>It is assumed that each project guided by this document has already established best practices based
+on <a href="https://nodis3.gsfc.nasa.gov/displayDir.cfm?t=NPR&amp;c=7150&amp;s=2B">NASA Procedural Requirements (NPR) 7150.2B</a></p>
+<p>In addition, there are several additional elements that should be in place before establishing the roles and processes
+described below:</p>
+<ul>
+<li>
+<p>Code is already open source approved and publicly available<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></p>
+</li>
+<li>
+<p>Development is being conducted in publicly available software repositories (e.g. gitlab, github)</p>
+</li>
+<li>Process is in place to allow for <a href="https://en.wikipedia.org/wiki/Continuous_integration">continuous integration</a>.</li>
+<li>A suite of regression tests is available and can be run by external contributors</li>
+<li>The project has an existing documented policy/process for setting vision and roadmaps, tracking releases, and
+  deployments.</li>
+<li>Deployment instructions for the software is well documented to facilitate collaboration and reproducible
+  installations.</li>
+</ul>
+<h2 id="code-contribution-roles-and-responsibilities">Code Contribution: Roles and Responsibilities<a class="headerlink" href="#code-contribution-roles-and-responsibilities" title="Permanent link">&para;</a></h2>
+<p><img alt="EOSDIS Collaboration" src="EOSDIS-Collaboration-Slide.png" /></p>
+<p><strong><em>Project Structure: This diagram lays out the relationships between the various roles in the team, showing how each
+role interacts as a high level</em></strong></p>
+<h3 id="users">Users<a class="headerlink" href="#users" title="Permanent link">&para;</a></h3>
+<p>Users are any end-users, operators, or monitors of the software system.</p>
+<h5 id="responsibilities">Responsibilities<a class="headerlink" href="#responsibilities" title="Permanent link">&para;</a></h5>
+<ul>
+<li>Using the software</li>
+<li>Providing bug reports and new feature requests via appropriate processes as documented by Technical Leadership Team</li>
+<li>Providing feedback to Project Leadership Team on proposed new features and testing fixes</li>
+</ul>
+<h3 id="project-management-board-pmb">Project Management Board (PMB)<a class="headerlink" href="#project-management-board-pmb" title="Permanent link">&para;</a></h3>
+<p>The project management board is a group of 3-7 individuals representing various stakeholders of the software system at
+various levels including DAAC and ESDIS members. A member of the Project Leadership Team (PLT) serves as the chair of
+this board and is in charge of populating the board.</p>
+<h5 id="responsibilities_1">Responsibilities<a class="headerlink" href="#responsibilities_1" title="Permanent link">&para;</a></h5>
+<ul>
+<li>Setting overall project direction and policy for the project</li>
+<li>Designating specific components of the system for inclusion in the centralized governance policy (laid out by this
+  document)</li>
+<li>Conducting monthly reviews of the project processes and status.</li>
+<li>Conducting less-frequent, periodic, and holistic system reviews, including soliciting third party reviews of the
+  system for usability, affordability, and security as needed</li>
+<li>Conducting periodic surveys of users to increase effectiveness of the system</li>
+<li>Continually monitoring and reporting on the vitality of the project via metrics such as:<ul>
+<li>Number of code contributions from DAACs, ESDIS, external sources</li>
+<li>Number of community members and their related affiliation and role</li>
+</ul>
+</li>
+<li>Interacting with Project Leadership Team (PLT) to discuss issues of importance</li>
+<li>Approving Technical Leadership Team members</li>
+<li>Approving promotion of project contributors to committers under advisement from PLT and TLT</li>
+</ul>
+<h3 id="project-manager-pm">Project Manager (PM)<a class="headerlink" href="#project-manager-pm" title="Permanent link">&para;</a></h3>
+<p>The project shall have a NASA Civil Servant designated as the overall project manager. The PM will be the overall
+decision maker for the project. This role ensures no conflicts of interest with existing contracts or other external
+entities seeking to influence system functionality. Specifically this PM will deal with decisions related to significant
+contributions from external contributors. (See the specific section of this document related to External Contributions
+for more details) The PM will serve as the chair of the PMB and will be part of the Project Leadership Team (PLT) and
+fulfill responsibilities outlined for that role.</p>
+<h3 id="project-leadership-team-plt">Project Leadership Team (PLT)<a class="headerlink" href="#project-leadership-team-plt" title="Permanent link">&para;</a></h3>
+<p>The project leadership team (PLT) consists of 1-2 overall system leads (one of whom is the Project Manager) who work
+closely with the PMB and Technical Leadership Team (TLT) to oversee system development and deployment.</p>
+<h5 id="responsibilities_2">Responsibilities<a class="headerlink" href="#responsibilities_2" title="Permanent link">&para;</a></h5>
+<ul>
+<li>Interacting closely with the PMB advising on system direction, as well as shifts in technical team membership and
+  processes</li>
+<li>Working on sprint planning and reviews with committers, ensuring all work aligns with system direction</li>
+<li>Working with the TLT to determine release cycle and versioning updates</li>
+<li>Keeping project schedule updated and reporting status to PMB as requested</li>
+<li>Maintaining project requirements baselines as needed</li>
+<li>Communicating status to EOSDIS, ESDIS leadership and HQ as requested</li>
+<li>Recommending technical leadership team members to the PMB</li>
+<li>Recommending contributors/developers promotion to committers/reviewers to the PMB</li>
+<li>Inviting and appointing members of the PMB.</li>
+<li>Maintaining contribution guidelines (this document)</li>
+<li>Fulfilling the "Product Owner" role of a scrum.</li>
+<li>Act as point of contact for ESDIS-funded DAACs who request new features or introduce high-priority issues/bugs</li>
+</ul>
+<h3 id="technical-leadership-team-tlt">Technical Leadership Team (TLT)<a class="headerlink" href="#technical-leadership-team-tlt" title="Permanent link">&para;</a></h3>
+<p>The TLT consists of 1-2 technical leads who work closely with the project leadership team and committers/reviewers to
+maintain the technical integrity, quality, stability, and direction of the system. The TLT may or may not also be a
+member of the PLT or PMB and may or may not be a committer/reviewer on the system.</p>
+<h5 id="responsibilities_3">Responsibilities<a class="headerlink" href="#responsibilities_3" title="Permanent link">&para;</a></h5>
+<ul>
+<li>Interacting closely with the PLT, advising on technical direction, as well as shifts in technical team membership and
+  processes</li>
+<li>Conducting periodic technical reviews of the system and process</li>
+<li>Ensuring code quality, technical integrity, system stability, development progress, and smooth deployment into target
+  environment</li>
+<li>Developing and maintaining documentation of style guides, best practices, and code quality expectations to be utilized
+  by Committers and Contributors.</li>
+<li>Working with the PLT to determine release cycle and versioning updates</li>
+<li>Documenting release cycle and versioning updates</li>
+<li>Working with the PLT in specifying, documenting, and maintaining tools to be used for code development, system
+  documentation, issue tracking, testing, continuous integration, automation activities and deployment (e.g.
+  JIRA/Github/Circle CI/Bamboo/Wiki)</li>
+<li>Recommending contributors/developers promotion to committers/reviewers to the PLT</li>
+<li>Fulfilling the "System Architect" (and Scrum Master) role(s) of an agile organization.</li>
+</ul>
+<h3 id="committers">Committers<a class="headerlink" href="#committers" title="Permanent link">&para;</a></h3>
+<p>These members of the team do all code merges into the main project repositories. All merged code must have undergone
+review by at least one other committer. All committers to the project codebases must be directly NASA-funded.</p>
+<h5 id="responsibilities_4">Responsibilities<a class="headerlink" href="#responsibilities_4" title="Permanent link">&para;</a></h5>
+<ul>
+<li>Working with TLT to develop and execute <strong>sprint</strong> plans based on TLT direction</li>
+<li>Fixing and testing bugs</li>
+<li>Participating in daily/weekly scrum meetings to discuss development progress and issues.</li>
+<li>Reviewing code/documentation contributions from other committers and contributors, ensuring compliance with style
+  guides, technical roadmap and code quality expectations</li>
+<li>Maintaining documentation of code processes and API changes</li>
+<li>Working with deployment team to ensure smooth testing delivery of releases</li>
+<li>Integrating contributions from contributors into baseline</li>
+<li>Contributing code/tests/documentation in accordance with style guides, technical roadmap and code quality expectations
+  outlined by the TLT</li>
+</ul>
+<h3 id="contributors">Contributors<a class="headerlink" href="#contributors" title="Permanent link">&para;</a></h3>
+<p>These members of the team may contribute code, documentation, containerized libraries, and examples to the system but
+may not merge any changes to the repository baselines. Contributors are not expected to execute on sprint plans,
+participate in scrums, or contribute critical functionality to the system. Contributors are not necessarily NASA-funded.
+NASA-funded contributors may be promoted to committers via the PMB if it makes sense to do so and they are recommended
+by both the TLT and PLT.</p>
+<h5 id="responsibilities_5">Responsibilities<a class="headerlink" href="#responsibilities_5" title="Permanent link">&para;</a></h5>
+<ul>
+<li>Contributing and justifying code/tests/documentation in accordance with style guides, technical roadmap and code
+  quality expectations outlined by the TLT</li>
+<li>Identifying, troubleshooting, fixing test failures and submitting bug fixes.</li>
+</ul>
+<h2 id="external-contributions-community-engagement-and-outreach">External Contributions, Community Engagement and Outreach<a class="headerlink" href="#external-contributions-community-engagement-and-outreach" title="Permanent link">&para;</a></h2>
+<p>It is the responsibility of the Project Manager to act as the primary point of contact for external contributors seeking
+to contribute to or modify the system in a significant way<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup>.</p>
+<p>Furthermore, the PM will work with the PMB and the PLT to develop strategies for community engagement and outreach for
+the project.</p>
+<h2 id="communication">Communication<a class="headerlink" href="#communication" title="Permanent link">&para;</a></h2>
+<p>All meeting minutes, actions, and notes should be kept in the <a href="https://wiki.earthdata.nasa.gov">Earthdata wiki</a> under
+the specific project space.</p>
+<p>From time to time, mail may be used for ongoing community discussions, system-wide announcements, release tracking,
+feedback solicitation, etc. The project should maintain a mailing list (
+e.g. <a href="mailto:cumulus-all@lists.nasa.gov">cumulus-all@lists.nasa.gov</a>) to facilitate broad communication within the
+community. All stakeholders should be subscribed to the <em>project’s</em> mailing list.</p>
+<p>EOSDIS project users, contributors, committers, and members of the TLT, PLT, and PMB are all encouraged to utilize Slack
+for day-to-day discussion and non-sensitive interactions. However, Slack <strong>SHALL NOT</strong> be used for documenting decision
+making. Slack is not an official NASA, or ESDIS-approved, endorsed tool. Only Public Access and Administrative
+Information is allowed in Slack, neither ITAR nor SBU information is appropriate for this service.</p>
+<p>Decisions on project direction, meeting notes from team meetings or PMB communications should be published as soon as
+feasible to a public facing site, such as the wiki.</p>
+<p>Communication for the PMB, PLT, and TLT should be free-flowing and ad-hoc via all channels mentioned above and should
+include more formal, monthly meetings of the full group.</p>
+<h2 id="documentation">Documentation<a class="headerlink" href="#documentation" title="Permanent link">&para;</a></h2>
+<p>Code quality, coding standards, test coverage, continuous integration processes, API documentation are all the purview
+of the PLT and TLT and shall be documented in the project wiki, or via README files within the repository.</p>
+<h2 id="testing">Testing<a class="headerlink" href="#testing" title="Permanent link">&para;</a></h2>
+<p>While it is expected that the projects utilizing this process will leverage automated test technologies and continuous
+integration techniques, specific testing policies and practices are determined and documented by the Technical
+Leadership Team (TLT). Testing policy should be enforced by committers and the TLT via code review and approvals. This
+policy will be available in the project wiki, or via README files within the repository.</p>
+<h2 id="deployment-environments-and-releases">Deployment Environments and Releases<a class="headerlink" href="#deployment-environments-and-releases" title="Permanent link">&para;</a></h2>
+<p>The Technical Leadership Team will work with the Project Leadership Team to determine the best timelines for new
+releases of the system. System releases should allow enough time for extensive testing and will maintain backwards
+compatibility with existing configured products.</p>
+<p>Each system release for ESDIS production usage should progress through a Systems Integration Test (SIT) environment, and
+a User Acceptance Test (UAT) environment prior to general release to public facing production environments. If deemed
+necessary by the TLT/PLT team, release will also undergo load/performance testing.</p>
+<p>As mentioned in the Assumptions subsection of this document, each project adhering to this process should have a
+well-documented and maintained release, test, and deployment process.</p>
+<h2 id="code-of-conduct">Code of Conduct<a class="headerlink" href="#code-of-conduct" title="Permanent link">&para;</a></h2>
+<p>Software system development is a highly collaborative endeavor and open source projects even more so. “A code of conduct
+is necessary so members of an organization or group understand the standards they will be expected to uphold when
+interacting with each other and others outside the organization.” <sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup></p>
+<p>Team members agree to abide by the Contributor Covenant as outlined
+here: <a href="https://www.contributor-covenant.org/version/1/4/code-of-conduct.html">https://www.contributor-covenant.org/version/1/4/code-of-conduct.html</a></p>
+<h2 id="security">Security<a class="headerlink" href="#security" title="Permanent link">&para;</a></h2>
+<p>All public facing EOSDIS projects covered by this document should follow a unified security policy. This security policy
+is meant to cover a wide-variety of topics including, but not limited to:</p>
+<ul>
+<li>Automated Tooling</li>
+<li>Developer Best Practices</li>
+<li>Process documentation</li>
+<li>Communication Patterns</li>
+<li>Risk Tolerance</li>
+</ul>
+<p>This security policy document will be covered by EOSDIS configuration management and will maintain an active copy in the
+Earthdata wiki.</p>
+<h2 id="project-closeout">Project Closeout<a class="headerlink" href="#project-closeout" title="Permanent link">&para;</a></h2>
+<p>Eventually, all projects tend to be retired and replaced by new initiatives and technologies. Software is especially
+prone to obsolescence and therefore special attention should be paid to the proper retirement process.</p>
+<p>Each project should develop a close-out plan focused on retiring production usage of the project within EOSDIS and
+notification of external stakeholders of the close-out. This plan should include elements such as:</p>
+<ul>
+<li>Code base retirement and decommissioning</li>
+<li>Stakeholder communication</li>
+<li>Smooth transition to new technology as needed</li>
+</ul>
+<p>The following is a helpful resource when considering shuttering a
+project: <a href="https://github.com/todogroup/guides/blob/master/shutting-down-an-open-source-project.md">https://github.com/todogroup/guides/blob/master/shutting-down-an-open-source-project.md</a></p>
+<h2 id="_1"><a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h2 id="example-scenarios-and-faq">Example Scenarios and FAQ<a class="headerlink" href="#example-scenarios-and-faq" title="Permanent link">&para;</a></h2>
+<h4 id="contribution-and-promotion-of-codedocumentation-to-repository">Contribution and promotion of code/documentation to repository<a class="headerlink" href="#contribution-and-promotion-of-codedocumentation-to-repository" title="Permanent link">&para;</a></h4>
+<p><img alt="Open Source Code Workflow" src="Open-Source-Code-Workflow.png" /></p>
+<p><strong><em>Example Workflow: Codebase Changes from both internal and external contributors.</em></strong></p>
+<h4 id="how-can-i-become-a-committer-meritocracy">How can I become a committer? (Meritocracy)<a class="headerlink" href="#how-can-i-become-a-committer-meritocracy" title="Permanent link">&para;</a></h4>
+<p>While this project’s vision is set by the PMB and executed by the PLT and TLT, individual contributors (who are funded
+by NASA) may be promoted to committers assuming they have garnered the respect within the project through their
+contributions and are willing to step into that role. As in the Apache Software Foundation, newcomers and contributors
+are seen as volunteers that want to help and are devoted to seeing the project realize its vision.</p>
+<h4 id="does-this-project-follow-agile-processes-for-development">Does this project follow Agile processes for development?<a class="headerlink" href="#does-this-project-follow-agile-processes-for-development" title="Permanent link">&para;</a></h4>
+<p>Probably. Generally EOSDIS employs agile processes. While Users and Contributors are not expected to participate in
+scrum and sprint planning activities, it is assumed that they will be aware of such processes in use by committers and
+other project leadership roles</p>
+<h4 id="who-managescontrols-determining-what-changes-will-be-applied-to-the-projects-codebases">Who manages/controls determining what changes will be applied to the project’s codebases?<a class="headerlink" href="#who-managescontrols-determining-what-changes-will-be-applied-to-the-projects-codebases" title="Permanent link">&para;</a></h4>
+<p>The Project Manager will review and ultimately act as decision maker on large functionality changes and re-architecting
+of the system. This will be done with advisement of the PMB, TLT and other EOSDIS leadership.</p>
+<h4 id="can-we-contribute-code-written-by-others-to-this-repository-or-can-we-merge-third-party-open-source-software-into-the-codebase">Can we contribute code written by others to this repository? Or can we merge third party open source software into the codebase?<a class="headerlink" href="#can-we-contribute-code-written-by-others-to-this-repository-or-can-we-merge-third-party-open-source-software-into-the-codebase" title="Permanent link">&para;</a></h4>
+<p>This is dependent on the license used by the specific project. If the project is released with
+the <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache 2.0 license</a>, it allows contributions from third party open
+source software assuming they are utilizing proper licensing and is approved by the TLT and PLT. Please refer to the
+specific license for more information.</p>
+<h4 id="can-i-fork-this-repository-and-make-my-own-project">Can I fork this repository and make my own project?<a class="headerlink" href="#can-i-fork-this-repository-and-make-my-own-project" title="Permanent link">&para;</a></h4>
+<p>Yes. We encourage forking as a model for contributing to the code base.</p>
+<p>However, when approaching the idea of creating a permanent fork of the repository maintained by a separate organization
+and group to add new functionality or change architecture, we strongly urge you to work with the Project Management
+Board and the Technical Lead to find a way to merge your changes/additions back into the main repository.</p>
+<h4 id="is-there-a-coding-style-guide-available">Is there a coding style guide available?<a class="headerlink" href="#is-there-a-coding-style-guide-available" title="Permanent link">&para;</a></h4>
+<p>Yes. Coding style guide is specified and maintained by the TLT and outside the scope of this document.</p>
+<h4 id="if-i-want-to-contribute-do-i-need-to-enter-into-an-cclaicla">If I want to contribute, do I need to enter into an <a href="https://en.wikipedia.org/wiki/Contributor_License_Agreement">CCLA/ICLA</a>?<a class="headerlink" href="#if-i-want-to-contribute-do-i-need-to-enter-into-an-cclaicla" title="Permanent link">&para;</a></h4>
+<p>The short answer is: maybe. NASA’s Patent Counsel can provide guidance for specific scenarios. If you are contributing
+code on your personal time, whether a government employee, contractor, or funded collaborator, please contact the
+project management board to discuss.</p>
+<h4 id="can-we-create-add-on-modules-to-the-project-codebase">Can we create add-on modules to the project codebase?<a class="headerlink" href="#can-we-create-add-on-modules-to-the-project-codebase" title="Permanent link">&para;</a></h4>
+<p>Yes. Contact the PM and PLT for information and guidance.</p>
+<h4 id="will-daacs-have-to-controlmanage-changes-to-their-added-project-modules">Will DAACs have to control/manage changes to their added project modules?<a class="headerlink" href="#will-daacs-have-to-controlmanage-changes-to-their-added-project-modules" title="Permanent link">&para;</a></h4>
+<p>Yes, DAACs will have a contact to control the changes to the codebase for the modules they are responsible for and will
+follow the same process outlined for core project code changes.</p>
+<h4 id="if-your-proposed-module-is-rejected-what-are-your-options">If your proposed module is rejected what are your options?<a class="headerlink" href="#if-your-proposed-module-is-rejected-what-are-your-options" title="Permanent link">&para;</a></h4>
+<p>If a module is ultimately rejected from being included in the project or as an add-on module, that only means that the
+PM/PLT does not think it’s applicable to the project codebase, it can be built/deployed/contributed to as an independent
+project/module in the ECC or via other source code repositories</p>
+<h4 id="do-developers-need-to-provide-good-concise-complete-descriptions-of-the-capabilities-of-their-developed-modules">Do developers need to provide good, concise, complete descriptions of the capabilities of their developed modules?<a class="headerlink" href="#do-developers-need-to-provide-good-concise-complete-descriptions-of-the-capabilities-of-their-developed-modules" title="Permanent link">&para;</a></h4>
+<p>YES. Documentation is vital and should be maintained within the project’s wiki space.</p>
+<h2 id="_2"><a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h2 id="acronymsglossary">Acronyms/Glossary<a class="headerlink" href="#acronymsglossary" title="Permanent link">&para;</a></h2>
+<table>
+  <tr>
+   <td>API
+   </td>
+   <td>Application Programming Interface
+   </td>
+  </tr>
+  <tr>
+   <td>CI
+   </td>
+   <td>Continuous Integration
+   </td>
+  </tr>
+  <tr>
+   <td>CLA  \
+(ICLA, CCLA)
+   </td>
+   <td>Contributor License Agreement, often individual  (ICLA) or commercial (CCLA)
+<p>
+<a href="https://www.clahub.com/pages/why_cla">https://www.clahub.com/pages/why_cla</a>
+   </td>
+  </tr>
+  <tr>
+   <td>DAAC
+   </td>
+   <td>Distributed Active Archive Center
+   </td>
+  </tr>
+  <tr>
+   <td>EC2
+   </td>
+   <td>Elastic Compute Cluster
+   </td>
+  </tr>
+  <tr>
+   <td>EOSDIS
+   </td>
+   <td>Earth Observing System Data and Information System
+   </td>
+  </tr>
+  <tr>
+   <td>ESDIS
+   </td>
+   <td>Earth Science Data and Information Systems
+   </td>
+  </tr>
+  <tr>
+   <td>NGAP
+   </td>
+   <td>NASA Compliant General Application Platform
+   </td>
+  </tr>
+  <tr>
+   <td>PM
+   </td>
+   <td>Project Manager (a NASA civil servant)
+   </td>
+  </tr>
+  <tr>
+   <td>PMB
+   </td>
+   <td>Project Management Board
+   </td>
+  </tr>
+  <tr>
+   <td>PLT
+   </td>
+   <td>Project Leadership Team
+   </td>
+  </tr>
+  <tr>
+   <td>TLT
+   </td>
+   <td>Technical Leadership Team
+   </td>
+  </tr>
+  <tr>
+   <td>SAFe®
+   </td>
+   <td>Scaled Agile Framework® <a href="https://www.scaledagileframework.com/">https://www.scaledagileframework.com/</a> \
+(SAFe and Scaled Agile Framework are registered trademarks of Scaled Agile, Inc.)
+   </td>
+  </tr>
+  <tr>
+   <td>Scrum
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>Sprint
+   </td>
+   <td>
+   </td>
+  </tr>
+</table>
+
+<h2 id="additional-resources">Additional Resources<a class="headerlink" href="#additional-resources" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Github Guidelines for
+  Contributions <a href="https://help.github.com/articles/setting-guidelines-for-repository-contributors/">https://help.github.com/articles/setting-guidelines-for-repository-contributors/</a></li>
+<li>Government Open Source Program
+  Guidelines  <a href="http://18f.github.io/open-source-program/">http://18f.github.io/open-source-program/</a></li>
+<li>Security process for Open Source
+  Projects <a href="https://alexgaynor.net/2013/oct/19/security-process-open-source-projects/">https://alexgaynor.net/2013/oct/19/security-process-open-source-projects/</a></li>
+<li>Apache Software Foundation “How it
+  works” <a href="http://apache.org/foundation/how-it-works.html">http://apache.org/foundation/how-it-works.html</a></li>
+<li>How Esri is doing it: <a href="https://github.com/esri/contributing">https://github.com/esri/contributing</a></li>
+<li>How to write the perfect pull
+  request: <a href="https://github.com/blog/1943-how-to-write-the-perfect-pull-request">https://github.com/blog/1943-how-to-write-the-perfect-pull-request</a></li>
+<li>Open Sourcing for Government
+  Attorneys <a href="http://ben.balter.com/2014/10/08/open-source-licensing-for-government-attorneys/">http://ben.balter.com/2014/10/08/open-source-licensing-for-government-attorneys/</a><ul>
+<li><em>“The work of contributors does not trigger gift authority or Anti-Deficiency Act obligations, unless the work is
+  performed specifically for the agency.”</em></li>
+</ul>
+</li>
+<li>NASA Earth Science Data Systems Open Source Working Group Recommendations (Draft Google Doc) (December
+  2015) <a href="https://docs.google.com/document/d/113zMYrNV0WccJkKSPq6m-RtBbvy2P0Ei7s3kM-Ts99I/edit?usp=sharing">https://docs.google.com/document/d/113zMYrNV0WccJkKSPq6m-RtBbvy2P0Ei7s3kM-Ts99I/edit?usp=sharing</a></li>
+<li>Reuse Readiness Levels (RRLs) NASA Earth Science Data Systems Software Reuse Working Group (April
+  2010) <a href="https://cdn.earthdata.nasa.gov/conduit/upload/2004/RRLs_v1.0.pdf">https://cdn.earthdata.nasa.gov/conduit/upload/2004/RRLs_v1.0.pdf</a></li>
+<li>Shutting down an open source
+  project: <a href="https://github.com/todogroup/guides/blob/master/shutting-down-an-open-source-project.md">https://github.com/todogroup/guides/blob/master/shutting-down-an-open-source-project.md</a></li>
+</ul>
+<h2 id="relationship-project-roles-and-safe-roles">Relationship Project Roles and SAFe roles<a class="headerlink" href="#relationship-project-roles-and-safe-roles" title="Permanent link">&para;</a></h2>
+<p>Many projects governed by this document are also being developed using the Scaled Agile Framework® or SAFe® practices.
+The table below is intended to describe the project roles described in this document and how they relate to various
+roles with SAFe</p>
+<table>
+  <tr>
+   <td>
+    Scrum or SAFe Role →
+<p>
+Project Role ↓
+   </td>
+   <td>Customer
+   </td>
+   <td>Product Owner
+   </td>
+   <td>Scrum Master
+   </td>
+   <td>Scrum Team
+   </td>
+  </tr>
+  <tr>
+   <td>Users
+   </td>
+   <td>
+   </td>
+   <td>
+   </td>
+   <td>
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>Project Management Board
+   </td>
+   <td>X
+   </td>
+   <td>X
+   </td>
+   <td>
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>Project Manager
+   </td>
+   <td>X
+   </td>
+   <td>
+   </td>
+   <td>
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>Project Leadership Team
+   </td>
+   <td>X
+   </td>
+   <td>X
+   </td>
+   <td>
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>Technical Leadership Team
+   </td>
+   <td>
+   </td>
+   <td>
+   </td>
+   <td>X*
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>Committers
+   </td>
+   <td>
+   </td>
+   <td>
+   </td>
+   <td>X*
+   </td>
+   <td>X**
+   </td>
+  </tr>
+  <tr>
+   <td>Contributors
+   </td>
+   <td>
+   </td>
+   <td>
+   </td>
+   <td>
+   </td>
+   <td>
+   </td>
+  </tr>
+</table>
+
+<ul>
+<li>The Scrum Master role may be filled by either a member of the TLT or the Committers. \
+  ** Only NASA-funded members of the Scrum Team nominated by the TLT are Committers.</li>
+</ul>
+<h2 id="responsible-team">Responsible Team<a class="headerlink" href="#responsible-team" title="Permanent link">&para;</a></h2>
+<p>The following people provided significant contributions or inspiration for this document. \</p>
+<table>
+  <tr>
+   <td>
+<ul>
+
+<li>Katie Baynes
+</li>
+</ul>
+   </td>
+   <td>
+<ul>
+
+<li>Patrick Quinn
+</li>
+</ul>
+   </td>
+  </tr>
+  <tr>
+   <td>
+<ul>
+
+<li>Taylor Wright
+</li>
+</ul>
+   </td>
+   <td>
+<ul>
+
+<li>Christopher Torbert
+</li>
+</ul>
+   </td>
+  </tr>
+  <tr>
+   <td>
+<ul>
+
+<li>Christine Smit
+</li>
+</ul>
+   </td>
+   <td>
+<ul>
+
+<li>Jason Werpy
+</li>
+</ul>
+   </td>
+  </tr>
+  <tr>
+   <td>
+<ul>
+
+<li>Ian Schuler
+</li>
+</ul>
+   </td>
+   <td>
+<ul>
+
+<li>Manil Maskey
+</li>
+</ul>
+   </td>
+  </tr>
+  <tr>
+   <td>
+<ul>
+
+<li>Christopher Lynnes
+</li>
+</ul>
+   </td>
+   <td>
+<ul>
+
+<li>Lewis McGibbney
+</li>
+</ul>
+   </td>
+  </tr>
+  <tr>
+   <td>
+<ul>
+
+<li>Mark McInerney
+</li>
+</ul>
+   </td>
+   <td>
+<ul>
+
+<li>Michael Gangl
+</li>
+</ul>
+   </td>
+  </tr>
+  <tr>
+   <td>
+<ul>
+
+<li>Chris Stoner
+</li>
+</ul>
+   </td>
+   <td>
+<ul>
+
+<li>Heather Goo
+</li>
+</ul>
+   </td>
+  </tr>
+  <tr>
+   <td>
+<ul>
+
+<li>Darla Werner
+</li>
+</ul>
+   </td>
+   <td>
+<ul>
+
+<li>Peter Plofchan
+</li>
+</ul>
+   </td>
+  </tr>
+  <tr>
+   <td>
+<ul>
+
+<li>Paul Ramirez
+</li>
+</ul>
+   </td>
+   <td>
+<ul>
+
+<li>Ajinkya Kulkarni
+</li>
+</ul>
+   </td>
+  </tr>
+  <tr>
+   <td>
+<ul>
+
+<li>Dana Shum
+</li>
+</ul>
+   </td>
+   <td>
+<ul>
+
+<li>Nathan Clark
+</li>
+</ul>
+   </td>
+  </tr>
+</table>
+
+<!-- Footnotes themselves at the bottom. -->
+
+<h2 id="notes">Notes<a class="headerlink" href="#notes" title="Permanent link">&para;</a></h2>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>Generally, NASA licenses software under either the <a href="https://opensource.org/licenses/Apache-2.0">Apache 2.0</a> or NASA Open Source Agreement (<a href="https://opensource.org/licenses/NASA-1.3">NOSA</a>) licenses. This document assumes a “nonreciprocal” licenses (<a href="https://opensource.org/node/875">https://opensource.org/node/875</a>) and not “reciprocal” licenses such as GPL&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p>A “significant way” in this context means addition of features and functionality and does not refer to bug fixes for
+existing functionality nor to minor edits in text or code. For some changes, the project leadership team&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:3">
+<p><a href="https://www.reference.com/world-view/important-code-conduct-eb44a47162843d27">https://www.reference.com/world-view/important-code-conduct-eb44a47162843d27</a>&#160;<a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.bd41221c.min.js"></script>
+      
+    
+  </body>
+</html>

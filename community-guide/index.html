@@ -1,0 +1,1769 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="Community Development Best Practices Working Group">
+      
+      
+        <link rel="canonical" href="https://ESIPFed.github.io/esds-community-guide/community-guide/">
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../contribution-guide/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.15">
+    
+    
+      
+        <title>Community Guide - Community Development Best Practices</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.7e359304.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#community-guide" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Community Development Best Practices" class="md-header__button md-logo" aria-label="Community Development Best Practices" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Community Development Best Practices
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Community Guide
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/ESIPFed/esds-community-guide" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Community Development Best Practices" class="md-nav__button md-logo" aria-label="Community Development Best Practices" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Community Development Best Practices
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/ESIPFed/esds-community-guide" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Community Guide
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Community Guide
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#relationship-to-other-policies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Relationship to other policies
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#community-guide-authors" class="md-nav__link">
+    <span class="md-ellipsis">
+      Community Guide Authors
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#values" class="md-nav__link">
+    <span class="md-ellipsis">
+      Values
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#community-flywheel-getting-started" class="md-nav__link">
+    <span class="md-ellipsis">
+      Community Flywheel (Getting Started)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Community Flywheel (Getting Started)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#open-source-is-a-superpower" class="md-nav__link">
+    <span class="md-ellipsis">
+      Open Source is a Superpower
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#make-everyone-feel-welcome" class="md-nav__link">
+    <span class="md-ellipsis">
+      Make Everyone Feel Welcome
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#be-responsive" class="md-nav__link">
+    <span class="md-ellipsis">
+      Be Responsive
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#give-more-than-you-take" class="md-nav__link">
+    <span class="md-ellipsis">
+      Give More Than You Take
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#handoffkeeping-the-flywheel-spinning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Handoff/Keeping the Flywheel Spinning
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#events-and-rituals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Events and Rituals
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Events and Rituals">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#developer-meetings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Developer meetings
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#community-meetings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Community meetings
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sprintshackathons" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sprints/hackathons
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#presentations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Presentations
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#workshops" class="md-nav__link">
+    <span class="md-ellipsis">
+      Workshops
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tutorials" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tutorials
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      References
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#leadership-and-mentoring" class="md-nav__link">
+    <span class="md-ellipsis">
+      Leadership and Mentoring
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resolving-conflicts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resolving Conflicts
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#metrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Metrics
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Metrics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-vibrant-is-your-community" class="md-nav__link">
+    <span class="md-ellipsis">
+      How vibrant is your community?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-do-you-tell-if-your-community-is-growingworking" class="md-nav__link">
+    <span class="md-ellipsis">
+      How do you tell if your community is growing/working
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#benchmarks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Benchmarks
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tools
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tools">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#utilization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Utilization
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#platformsguis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Platforms/GUIs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#command-promptterminal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Command Prompt/Terminal
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#integrated-development-environments-ides" class="md-nav__link">
+    <span class="md-ellipsis">
+      Integrated Development Environments (IDEs)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#extensionsplugins" class="md-nav__link">
+    <span class="md-ellipsis">
+      Extensions/Plugins
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#communication-and-collaboration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Communication and Collaboration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#content-creation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Content Creation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#visualization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Visualization
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#community-gathering" class="md-nav__link">
+    <span class="md-ellipsis">
+      Community Gathering
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#video-conferencing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Video Conferencing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-to-build-with" class="md-nav__link">
+    <span class="md-ellipsis">
+      What To Build With?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creating-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating Tools
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#innovation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Innovation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scalability" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scalability
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#accessibility_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Accessibility
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#future-proofing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Future Proofing
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#templates" class="md-nav__link">
+    <span class="md-ellipsis">
+      Templates
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Templates">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      Issues
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pull-requests" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pull Requests
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resources
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resources_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resources
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#success-stories" class="md-nav__link">
+    <span class="md-ellipsis">
+      Success Stories
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Success Stories">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pangeo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pangeo
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../contribution-guide/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contribution Guide
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CODE_OF_CONDUCT/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Code of Conduct
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#relationship-to-other-policies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Relationship to other policies
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#community-guide-authors" class="md-nav__link">
+    <span class="md-ellipsis">
+      Community Guide Authors
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#values" class="md-nav__link">
+    <span class="md-ellipsis">
+      Values
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#community-flywheel-getting-started" class="md-nav__link">
+    <span class="md-ellipsis">
+      Community Flywheel (Getting Started)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Community Flywheel (Getting Started)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#open-source-is-a-superpower" class="md-nav__link">
+    <span class="md-ellipsis">
+      Open Source is a Superpower
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#make-everyone-feel-welcome" class="md-nav__link">
+    <span class="md-ellipsis">
+      Make Everyone Feel Welcome
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#be-responsive" class="md-nav__link">
+    <span class="md-ellipsis">
+      Be Responsive
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#give-more-than-you-take" class="md-nav__link">
+    <span class="md-ellipsis">
+      Give More Than You Take
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#handoffkeeping-the-flywheel-spinning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Handoff/Keeping the Flywheel Spinning
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#events-and-rituals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Events and Rituals
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Events and Rituals">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#developer-meetings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Developer meetings
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#community-meetings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Community meetings
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sprintshackathons" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sprints/hackathons
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#presentations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Presentations
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#workshops" class="md-nav__link">
+    <span class="md-ellipsis">
+      Workshops
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tutorials" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tutorials
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      References
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#leadership-and-mentoring" class="md-nav__link">
+    <span class="md-ellipsis">
+      Leadership and Mentoring
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resolving-conflicts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resolving Conflicts
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#metrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Metrics
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Metrics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-vibrant-is-your-community" class="md-nav__link">
+    <span class="md-ellipsis">
+      How vibrant is your community?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-do-you-tell-if-your-community-is-growingworking" class="md-nav__link">
+    <span class="md-ellipsis">
+      How do you tell if your community is growing/working
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#benchmarks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Benchmarks
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tools
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tools">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#utilization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Utilization
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#platformsguis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Platforms/GUIs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#command-promptterminal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Command Prompt/Terminal
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#integrated-development-environments-ides" class="md-nav__link">
+    <span class="md-ellipsis">
+      Integrated Development Environments (IDEs)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#extensionsplugins" class="md-nav__link">
+    <span class="md-ellipsis">
+      Extensions/Plugins
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#communication-and-collaboration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Communication and Collaboration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#content-creation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Content Creation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#visualization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Visualization
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#community-gathering" class="md-nav__link">
+    <span class="md-ellipsis">
+      Community Gathering
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#video-conferencing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Video Conferencing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-to-build-with" class="md-nav__link">
+    <span class="md-ellipsis">
+      What To Build With?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creating-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating Tools
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#innovation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Innovation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scalability" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scalability
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#accessibility_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Accessibility
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#future-proofing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Future Proofing
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#templates" class="md-nav__link">
+    <span class="md-ellipsis">
+      Templates
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Templates">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      Issues
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pull-requests" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pull Requests
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resources
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resources_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resources
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#success-stories" class="md-nav__link">
+    <span class="md-ellipsis">
+      Success Stories
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Success Stories">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pangeo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pangeo
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="community-guide">Community Guide<a class="headerlink" href="#community-guide" title="Permanent link">&para;</a></h1>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
+<p>The ESDSWG Community Guide is a collection of best-practices and resources for running successful open source communities around NASA ACCESS and other NASA open source software projects. While the Open Source Guide covers the ins and outs of setting up the systems that manage the code, documentation, and user input of a software project - this guide is designed to help you take those systems and build a real community around them.</p>
+<h3 id="relationship-to-other-policies">Relationship to other policies<a class="headerlink" href="#relationship-to-other-policies" title="Permanent link">&para;</a></h3>
+<p>Our goals are aligned with those of NASA's Science Mission Directorate policy <a href="https://science.nasa.gov/spd-41/">SPD-41a: Scientific Information Policy for the Science Mission Directorate</a> that provides guidance on the open sharing of publications, data, and software created in the pursuit of scientific knowledge. We aim to extend this guidance to the domain of science software.
+Those policy changes that apply to science software are as follows:</p>
+<ul>
+<li>Research data and <strong>software</strong> are shared at the time of publication or the end of the funding award.  </li>
+<li>Mission data are released as soon as possible, and <strong>unrestricted mission software is developed openly</strong>.</li>
+</ul>
+<p>Policy specific to earth science in this domain:</p>
+<ul>
+<li><a href="https://www.earthdata.nasa.gov/engage/open-data-services-and-software">Earth Science Open Data, Services, and Software Policies</a></li>
+<li><a href="https://www.earthdata.nasa.gov/engage/open-data-services-and-software/esds-open-source-policy">ESDS Open Source Software Policy</a> </li>
+</ul>
+<h3 id="community-guide-authors">Community Guide Authors<a class="headerlink" href="#community-guide-authors" title="Permanent link">&para;</a></h3>
+<p>This guide is the collective effort of many individuals during multiple ESDSWG periods. See the <a href="https://wiki.earthdata.nasa.gov/display/ESDSWG/Community+Development+Best+Practices+Working+Group">Community Development Best Practices meeting notes</a> on the EarthData wiki for a full list of contributors.</p>
+<h3 id="values">Values<a class="headerlink" href="#values" title="Permanent link">&para;</a></h3>
+<h4 id="transparency">Transparency<a class="headerlink" href="#transparency" title="Permanent link">&para;</a></h4>
+<p>Projects should be transparent to the community.</p>
+<h4 id="accessibility">Accessibility<a class="headerlink" href="#accessibility" title="Permanent link">&para;</a></h4>
+<p>Project assets should be accessible to everyone in the community.</p>
+<h4 id="inclusivity">Inclusivity<a class="headerlink" href="#inclusivity" title="Permanent link">&para;</a></h4>
+<p>Projects should welcome participation by and collaboration with diverse people and organizations.
+<em>Editor's note: These values are based on NASA's <a href="https://science.nasa.gov/open-science-overview">Open Source Science Initiative principles</a></em></p>
+<h2 id="community-flywheel-getting-started">Community Flywheel (Getting Started)<a class="headerlink" href="#community-flywheel-getting-started" title="Permanent link">&para;</a></h2>
+<p>Open source projects present an amazing opportunity for a community to come together around a common goal. Getting that initial effort off the ground can often feel like a monumental task. Think of your project as a flywheel<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>. In order to get the flywheel moving, you need to put a significant amount of initial effort to get it moving. This effort could be writing a bunch of blog posts and how-tos to promote the project, creating walkthrough videos to get people started, talking to people at conferences, and providing support and resources to help get people involved. As the flywheel spins, it becomes easier to maintain momentum and keep the community humming along.</p>
+<h3 id="open-source-is-a-superpower">Open Source is a Superpower<a class="headerlink" href="#open-source-is-a-superpower" title="Permanent link">&para;</a></h3>
+<p>When a project is open source, almost everything is "built in public." Potential contributors can easily work with the software and see how the community functions before making a commitment. Often, these projects will have documentation and other non-code tasks for community members to manage. These tasks can be an inroad to larger contributions and involvement in the community. Working in public also provides transparency and a high-level of trust for everyone involved. This trust and credibility is converted to momentum and the flywheel keeps spinning.</p>
+<h3 id="make-everyone-feel-welcome">Make Everyone Feel Welcome<a class="headerlink" href="#make-everyone-feel-welcome" title="Permanent link">&para;</a></h3>
+<p>It's important to create a welcoming and supportive environment for newcomers. The goal is for everyone to feel valued as members of the community. </p>
+<p>Here are some tips for creating a welcoming environment for newcomers:</p>
+<ul>
+<li>Be friendly and approachable. Reach out to new contributors and learn about their interests. Get to know what they'd like to contribute to and work to find areas of the project they could support.</li>
+<li>Be inclusive. Encourage participation from new members and listen to their ideas--even if they are not experienced or well-known.</li>
+<li>Be patient. Remember that everyone has to start somewhere, and that it can take time for new contributors to learn the ropes and become comfortable with the project and its community.</li>
+<li>Be clear and concise. Make sure that your communication is clear and easy to understand, and avoid using jargon or complex technical language that may be confusing.</li>
+<li>Be helpful. Provide resources and support to help new contributors get started, such as links to relevant documentation, tutorials, or examples. Be available to answer questions and provide guidance.</li>
+</ul>
+<h3 id="be-responsive">Be Responsive<a class="headerlink" href="#be-responsive" title="Permanent link">&para;</a></h3>
+<p>It's important that the community feel active to newcomers and that current members see a "pace" and flow to the communication and responsiveness of the project maintainers. Being responsive and engaged with the community while avoiding burning out can sometimes seem overwhelming, but there are steps you can take to manage this responsibility without the stress:</p>
+<ul>
+<li>Set clear boundaries and expectations for your involvement in the community. Establish regular communication channels where you can provide updates and address concerns from the community.</li>
+<li>Delegate tasks and responsibilities to other members of the community, and to provide support and resources to help them take on these roles.</li>
+<li>Prioritize self-care and avoid overcommitting yourself. Be realistic about the time and energy you have available to devote to the project and community.</li>
+<li>Seek support and advice from others, such as other project maintainers or members of the community, to help you manage your workload and avoid burnout.</li>
+</ul>
+<h3 id="give-more-than-you-take">Give More Than You Take<a class="headerlink" href="#give-more-than-you-take" title="Permanent link">&para;</a></h3>
+<p>For a community to grow, the founding members of the community will likely have to give more than they take. This giving can come in the form of advice and insight, documentation and how-tos, screencasts, and social events. Consider the value that a member gets from the organization and how that might encourage them to contribute. Only after you've given substantially to the community should you ask your members or contributors to do something. Not only will this make the community feel like they're getting <em>real</em> value from the group (make it worth their time) but it will also inspire genuine and meaningful contributions.</p>
+<h4 id="examples-of-giving">Examples of Giving<a class="headerlink" href="#examples-of-giving" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Screencast showing the basics of submitting a pull request to the project</li>
+<li>Community leaders writing and publishing documentation and best-practices as guideposts for members</li>
+<li>Responding to questions and issues raised by community members in a timely and helpful manner</li>
+<li>Mentoring new contributors and helping them to become familiar with the project and its goals</li>
+<li>Recognizing contributions, big and small</li>
+<li>Hosting events or conferences related to the project</li>
+<li>Helping to build and maintain partnerships with other organizations or projects aligned with community goals</li>
+<li>Actively seeking out and addressing any potential barriers to participation, such as unclear documentation or a lack of resources</li>
+<li>Using Twitter and other social media platforms to talk about <em>how to use</em> the software/system/project in your own project</li>
+</ul>
+<h3 id="handoffkeeping-the-flywheel-spinning">Handoff/Keeping the Flywheel Spinning<a class="headerlink" href="#handoffkeeping-the-flywheel-spinning" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Communicate openly and transparently with the community. Keep community members informed about any changes or developments related to the project, and get their feedback and input.</li>
+<li>Establish clear roles and responsibilities for project leadership and management. This can help to ensure that the project continues to move forward, even if the leadership team changes.</li>
+<li>Prioritize and focus on the most important goals and objectives of the project. This can help to keep the project on track, even as it grows and evolves.</li>
+<li>Encourage and support community participation. Make it easy for community members to contribute, and recognize and thank them for their contributions. This can help to maintain and even grow the community, which is essential for the long-term success of the project.</li>
+<li>Continuously assess and adapt to the changing needs and challenges of the project. Be willing to make changes and adjustments as needed.</li>
+</ul>
+<h2 id="events-and-rituals">Events and Rituals<a class="headerlink" href="#events-and-rituals" title="Permanent link">&para;</a></h2>
+<h3 id="developer-meetings">Developer meetings<a class="headerlink" href="#developer-meetings" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Scope:</strong> Coordination of ongoing development activities</li>
+<li><strong>Who should attend:</strong> Active contributors to the project, maintainers, project lead</li>
+<li><strong>Timing:</strong> Depends on project size, ranges from daily to yearly</li>
+<li><strong>Duration:</strong> Usually 1 hour</li>
+<li><strong>Advice:</strong> Record progress through issues and pull requests</li>
+</ul>
+<h3 id="community-meetings">Community meetings<a class="headerlink" href="#community-meetings" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Scope:</strong> Communication of development activities and events with the broader community, opportunity for community feedback</li>
+<li><strong>Who should attend:</strong> Typically open to everyone</li>
+<li><strong>Timing:</strong> Depends on project size, ranges from weekly to quarterly</li>
+<li><strong>Duration:</strong> Usually 1 hour</li>
+<li><strong>Advice:</strong><ul>
+<li>Require registration or have a waiting room</li>
+<li>Designate a leader for the community meeting</li>
+<li>Designate a separate note taker</li>
+<li>Share open notes after the meeting</li>
+</ul>
+</li>
+</ul>
+<h3 id="sprintshackathons">Sprints/hackathons<a class="headerlink" href="#sprintshackathons" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Scope:</strong> Synchronous collaboration on open source projects</li>
+<li><strong>Who should attend:</strong> Defined by sprint organizers, could be focused on a core team, welcoming new contributors, or a combination for larger sprints</li>
+<li><strong>Timing:</strong> Typically in conjunction with conferences, could be once per year or more frequently for larger projects</li>
+<li><strong>Duration:</strong> Usually 1-2 days</li>
+<li><strong>Advice:</strong> <ul>
+<li>Specify goals for the sprint (e.g., targeted development towards roadmap items from core devs, onboarding new contributors)</li>
+<li>If onboarding new contributors, label ‘good first issues’ and ‘help wanted’ on GitHub issues</li>
+<li>If focusing on targeted technical development, communicate to conference leads that expertise is required</li>
+</ul>
+</li>
+</ul>
+<h3 id="presentations">Presentations<a class="headerlink" href="#presentations" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Scope:</strong> Ranges from general information about the project to in-depth overview of a specific technical aspect</li>
+<li><strong>Timing:</strong> As frequently as community members have an appetite for presenting</li>
+<li><strong>Format:</strong> Varies from informal videos, conference presentations, podcasts, or community presentations</li>
+</ul>
+<h3 id="workshops">Workshops<a class="headerlink" href="#workshops" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Scope:</strong> In depth introduction to software tools</li>
+<li><strong>Timing:</strong> Typically infrequently unless following a model such as Software Carpentry</li>
+<li><strong>Duration:</strong> Typically 1-5 days</li>
+<li><strong>Advice:</strong><ul>
+<li>The people leading the workshops do not need to be the same as the person coordinating the workshop</li>
+<li>Require applications and registration</li>
+<li>Solicit feedback from participants</li>
+</ul>
+</li>
+</ul>
+<h3 id="tutorials">Tutorials<a class="headerlink" href="#tutorials" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Scope:</strong> Succinct introduction to software</li>
+<li><strong>Timing:</strong> As frequently as community members have an appetite for leading tutorials</li>
+<li><strong>Duration:</strong> Typically 1 - 4 hr</li>
+<li><strong>Advice:</strong> <ul>
+<li>Clearly communicate expected prior experience and target audience</li>
+<li>Record videos where possible and share for future reference</li>
+</ul>
+</li>
+</ul>
+<h3 id="references">References<a class="headerlink" href="#references" title="Permanent link">&para;</a></h3>
+<ul>
+<li>https://opensourceevents.github.io/</li>
+<li>https://mentored-sprints.netlify.app/</li>
+</ul>
+<h2 id="leadership-and-mentoring">Leadership and Mentoring<a class="headerlink" href="#leadership-and-mentoring" title="Permanent link">&para;</a></h2>
+<h2 id="resolving-conflicts">Resolving Conflicts<a class="headerlink" href="#resolving-conflicts" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="https://www.contributor-covenant.org/version/2/0/code_of_conduct/">Contributor Covenant</a> is a good place to start</li>
+</ul>
+<h2 id="metrics">Metrics<a class="headerlink" href="#metrics" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>I fundamentally believe that pragmatic sustainable software is better built organically and collectively. I am curious what metrics might capture these more community-supportive behaviors.</p>
+</blockquote>
+<p><em>Mathew Rocklin, DASK</em></p>
+<p>The measurement of how successful your community is can be extremely difficult to quantify. There are a number of possible indicators but they, individually, may tell only part of the whole story. They are also, generally, open to interpretation.</p>
+<p>Given this, it would seem prudent to measure as many of these indicators as possible and interpolate to get a true picture of community vibrancy, growth, engagement, etc.</p>
+<p>None of the suggestions below should be used in isolation as a measure. Potential pitfalls of that practice may be itemized for each suggestion below.</p>
+<h3 id="how-vibrant-is-your-community">How vibrant is your community?<a class="headerlink" href="#how-vibrant-is-your-community" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p><em>vi·brant</em>, adjective: <strong>full of energy and enthusiasm</strong>. Example: "a vibrant cosmopolitan city"</p>
+</blockquote>
+<p>Enthusiasm in this context could be measured by,
+- Attendance at events and ceremonies
+- Volume of communications (Slack posts, mailing lists messages)
+- New feature requests</p>
+<p>As these metrics are mapped over time a gauge of the change in vibrancy can be measured.</p>
+<h4 id="evolution">Evolution<a class="headerlink" href="#evolution" title="Permanent link">&para;</a></h4>
+<p>Is your project changing with time or stagnant?</p>
+<h4 id="commits">Commits<a class="headerlink" href="#commits" title="Permanent link">&para;</a></h4>
+<p>How much change exists within your project?
+<a href="https://github.com/dask/dask/graphs/commit-activity">DASK example</a></p>
+<h4 id="performance">Performance<a class="headerlink" href="#performance" title="Permanent link">&para;</a></h4>
+<p>How well is your community responding to challenges?</p>
+<h5 id="open-vs-closed-issues">Open vs Closed issues<a class="headerlink" href="#open-vs-closed-issues" title="Permanent link">&para;</a></h5>
+<p>Are you opening more issues than closing? Ideally, we would like to close more than we open.</p>
+<h5 id="mean-time-to-fix-issues">Mean time to fix issues<a class="headerlink" href="#mean-time-to-fix-issues" title="Permanent link">&para;</a></h5>
+<p>How quickly are you resolving issues? We would like to improve on our fix rate.</p>
+<h4 id="demographics">Demographics<a class="headerlink" href="#demographics" title="Permanent link">&para;</a></h4>
+<p>How is your community changing over time?</p>
+<h5 id="joined-left-project-over-time">Joined / left project over time<a class="headerlink" href="#joined-left-project-over-time" title="Permanent link">&para;</a></h5>
+<p>We would like to grow our contribution community. We should also be cognizant of rapid increases or decreases in that community.</p>
+<h4 id="diversity">Diversity<a class="headerlink" href="#diversity" title="Permanent link">&para;</a></h4>
+<p>Do we have represenation from a broad number of organizations?
+If one organization leaves, would that cause significant problems?</p>
+<h5 id="percentage-authors-by-organization">Percentage authors by organization<a class="headerlink" href="#percentage-authors-by-organization" title="Permanent link">&para;</a></h5>
+<p>Is one organization particularly dominant? Ideally, we would like a spread between organizations to lessen the risk of sudden community shrinkage and encourage a diversity of ideas.</p>
+<h5 id="pony-and-elephant-factors">Pony and Elephant factors<a class="headerlink" href="#pony-and-elephant-factors" title="Permanent link">&para;</a></h5>
+<p>The pony factor: the minimum number of developers performing 50% of the commits
+The elephant factor: the minimum number of organizations whose employees perform 50% of the commits</p>
+<h3 id="how-do-you-tell-if-your-community-is-growingworking">How do you tell if your community is growing/working<a class="headerlink" href="#how-do-you-tell-if-your-community-is-growingworking" title="Permanent link">&para;</a></h3>
+<p>Blurb neeed here!</p>
+<h4 id="size">Size<a class="headerlink" href="#size" title="Permanent link">&para;</a></h4>
+<p>Is your community growing, stagnant or shrinking?</p>
+<h5 id="authors">Authors<a class="headerlink" href="#authors" title="Permanent link">&para;</a></h5>
+<p>The more contributors to your project the more your project is growing. However, it is not a sole indicator growth as it is not a primary indicator of usage.</p>
+<p><a href="https://github.com/dask/dask/graphs/contributors">DASK example</a></p>
+<h5 id="messsages">Messsages<a class="headerlink" href="#messsages" title="Permanent link">&para;</a></h5>
+<p>Much like authors, large amounts of talk about your project is an indicator of the size of your project. Two authors in regular conversation is a stronger indicator of growth than ten authors who haven't communicated for a year.</p>
+<p><a href="https://github.com/dask/dask/graphs/contributors">DASK example</a></p>
+<h5 id="documentation-views">Documentation views<a class="headerlink" href="#documentation-views" title="Permanent link">&para;</a></h5>
+<p>Downloads and clones of your project may suffer from 'bounce' problems. Ie. I downloaded this tool but I didn't use it. Measuring the views of the projects documentation a good metric for how many users are actively engaged in the use of your project.</p>
+<h4 id="engagement">Engagement<a class="headerlink" href="#engagement" title="Permanent link">&para;</a></h4>
+<p>Is our project community serving the greater community?</p>
+<h5 id="clonesdownloadsforks">Clones/downloads/forks<a class="headerlink" href="#clonesdownloadsforks" title="Permanent link">&para;</a></h5>
+<p>The more clones and downloads of a project the more value it seems to demonstrate. However, are those clones and downloads actually used? Are they being downloaded as part of an automated provisioning process rather than an explicit use? </p>
+<p><a href="https://github.com/dask/dask/network/members">DASK example</a></p>
+<h5 id="no-of-dependencies">No. of dependencies<a class="headerlink" href="#no-of-dependencies" title="Permanent link">&para;</a></h5>
+<p>A project being used by other projects is a measure of engagement. In much the same way that citations of a paper by other papers is an indication of value.</p>
+<p><a href="https://github.com/dask/dask/network/dependencies">DASK example</a></p>
+<h5 id="github-stars">Github stars<a class="headerlink" href="#github-stars" title="Permanent link">&para;</a></h5>
+<p>A very obvious but nebulous and fickle measure of engagement. Is it of value? On it's own, no. But in conjunction with other metrics it may be useful. 
+Metrics: Our download numbers are huge but our github stars are low 
+Possible conclusion: This is an essential project to many but it is difficult to use</p>
+<p><a href="https://github.com/dask/dask/stargazers">DASK example</a></p>
+<h3 id="benchmarks">Benchmarks<a class="headerlink" href="#benchmarks" title="Permanent link">&para;</a></h3>
+<hr />
+<h2 id="tools">Tools<a class="headerlink" href="#tools" title="Permanent link">&para;</a></h2>
+<p><img alt="&lt;a href=&quot;https://storyset.com/technology&quot;&gt;Technology illustrations by Storyset&lt;/a&gt;" src="../assets/images/Devices-cuate.png" /></p>
+<p>To facilitate an open-source philosophy, technology can give you the agency to foster collaboration, innovation, and communication. When using and building tools, frameworks, and applications, consider how they augment, promote, and enhance the community.</p>
+<p>We have several tools that we use for earth data products. We recommend using this common list of apps and plugins to help you with your projects.</p>
+<h3 id="utilization"><ins>Utilization</ins><a class="headerlink" href="#utilization" title="Permanent link">&para;</a></h3>
+<h3 id="platformsguis">Platforms/GUIs<a class="headerlink" href="#platformsguis" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Browser:</strong> The preferred browser for Earthdata products is <a href="https://www.google.com/chrome/downloads/">Google Chrome</a> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"/></svg></span>.</li>
+<li><strong>Git:</strong> An open-source version control system for development projects. We use this to set up projects in GitHub. To learn more about how it works go to <a href="https://git-scm.com/">Git</a> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"/></svg></span>.</li>
+<li><strong>GitHub:</strong> A code repository and development platform that helps us build projects. To get started with GitHub go to <a href="https://docs.github.com/en/get-started">GitHub Docs</a> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"/></svg></span>.</li>
+</ul>
+<h3 id="command-promptterminal">Command Prompt/Terminal<a class="headerlink" href="#command-promptterminal" title="Permanent link">&para;</a></h3>
+<p>A text-based command line tool on your Mac, PC, or Linux systems. There are third-party command line tools that you can use or integrate with your IDE.</p>
+<h3 id="integrated-development-environments-ides">Integrated Development Environments (IDEs)<a class="headerlink" href="#integrated-development-environments-ides" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Jupyter Notebook:</strong> A web-based development environment used for data science and computing. Visit <a href="https://jupyter.org/">Jupyter Notebook</a> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"/></svg></span>.</li>
+<li><strong>PyCharm:</strong> A specialized IDE for Python programmers. Visit <a href="https://www.jetbrains.com/pycharm/">PyCharm</a> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"/></svg></span>.</li>
+<li><strong>Visual Studio Code:</strong> A code editor for building and debugging apps. Visit <a href="https://code.visualstudio.com/">Visual Studio Code</a> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"/></svg></span>.</li>
+</ul>
+<h3 id="extensionsplugins">Extensions/Plugins<a class="headerlink" href="#extensionsplugins" title="Permanent link">&para;</a></h3>
+<p>You may need to enhance an experience or ability within a tool and there are vast options to partake. </p>
+<p><img alt="&lt;a href=&quot;https://storyset.com/web&quot;&gt;Web illustrations by Storyset&lt;/a&gt;" src="../assets/images/Programming-amico.png" width="300" /></p>
+<h3 id="communication-and-collaboration"><ins>Communication and Collaboration</ins><a class="headerlink" href="#communication-and-collaboration" title="Permanent link">&para;</a></h3>
+<p>There are a myriad of various tools to select for engaging with other community members and online participants.</p>
+<h3 id="content-creation">Content Creation<a class="headerlink" href="#content-creation" title="Permanent link">&para;</a></h3>
+<p>When deciding which tool to use for documentation or creating content you need to determine the scale and the audience as well as the amount of effort to learn/use the application.</p>
+<ul>
+<li>Atlassian (Confluence, Trello)</li>
+<li>Docusaurus</li>
+<li>Google Workspace (Docs, Sheets, Slides, Forms)</li>
+<li>Jekyll</li>
+<li>MkDocs</li>
+<li>Notion</li>
+<li>Sphinx</li>
+</ul>
+<h3 id="visualization">Visualization<a class="headerlink" href="#visualization" title="Permanent link">&para;</a></h3>
+<p>Various online options for storytelling and collaboration are at your disposal. You want to consider some popular and intuitive applications like the following:</p>
+<ul>
+<li>Figma</li>
+<li>Lucidchart</li>
+<li>Miro</li>
+<li>Mural</li>
+</ul>
+<p><img alt="&lt;a href=&quot;https://storyset.com/online&quot;&gt;Online illustrations by Storyset&lt;/a&gt;" src="../assets/images/Open%20source-cuate-no-code.png" /></p>
+<h3 id="community-gathering">Community Gathering<a class="headerlink" href="#community-gathering" title="Permanent link">&para;</a></h3>
+<p>As you know, communication is essential. Today’s world allows you to meet remotely. When choosing a community space, consider if the application promotes transparency, clarity, and inclusivity.</p>
+<ul>
+<li>Discord</li>
+<li>Discourse</li>
+<li>Gitter</li>
+<li>Slack</li>
+</ul>
+<h3 id="video-conferencing">Video Conferencing<a class="headerlink" href="#video-conferencing" title="Permanent link">&para;</a></h3>
+<p>While the community grows you may feel that communicating and collaborating through video and immersive conferencing tools are best for what you are trying to work on together.</p>
+<ul>
+<li>Google Meet</li>
+<li>Microsoft Teams/Skype</li>
+<li>Zoom</li>
+</ul>
+<h3 id="what-to-build-with">What To Build With?<a class="headerlink" href="#what-to-build-with" title="Permanent link">&para;</a></h3>
+<p>When choosing frameworks, APIs, environments, and libraries it helps to assess the scalability and viability of these tools in order to future-proof and maintain a product. Below is a list of what we are currently using.</p>
+<h4 id="languages">Languages<a class="headerlink" href="#languages" title="Permanent link">&para;</a></h4>
+<ul>
+<li>JavaScript</li>
+<li>Python</li>
+<li>Ruby</li>
+</ul>
+<h4 id="frameworkslibraries">Frameworks/Libraries<a class="headerlink" href="#frameworkslibraries" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Rails</li>
+<li>React</li>
+</ul>
+<h4 id="cloud-services">Cloud Services<a class="headerlink" href="#cloud-services" title="Permanent link">&para;</a></h4>
+<ul>
+<li>AWS</li>
+<li>Azure</li>
+<li>Google Cloud</li>
+</ul>
+<h4 id="testing">Testing<a class="headerlink" href="#testing" title="Permanent link">&para;</a></h4>
+<ul>
+<li>JetBrains</li>
+<li>Selenium</li>
+</ul>
+<p><img alt="&lt;a href=&quot;https://storyset.com/technology&quot;&gt;Technology illustrations by Storyset&lt;/a&gt;" src="../assets/images/Developer%20activity.png" width="300" /></p>
+<h3 id="creating-tools"><ins>Creating Tools</ins><a class="headerlink" href="#creating-tools" title="Permanent link">&para;</a></h3>
+<h3 id="innovation">Innovation<a class="headerlink" href="#innovation" title="Permanent link">&para;</a></h3>
+<p>Usage will constantly change with the industry standards, usage methodology, and technology and so will your approach to developing tools.</p>
+<h3 id="scalability">Scalability<a class="headerlink" href="#scalability" title="Permanent link">&para;</a></h3>
+<p>Understanding the impact of the size and the roadmap for your project helps you successfully progress as you contribute to the community.</p>
+<h3 id="accessibility_1">Accessibility<a class="headerlink" href="#accessibility_1" title="Permanent link">&para;</a></h3>
+<p>When interacting with other contributors we suggest that you use methods that help empower a cohesive and inclusive culture.</p>
+<h3 id="future-proofing">Future Proofing<a class="headerlink" href="#future-proofing" title="Permanent link">&para;</a></h3>
+<p><img align="right" alt="&lt;a href=&quot;https://storyset.com/work&quot;&gt;Work illustrations by Storyset&lt;/a&gt;" src="../assets/images/Innovation-amico.png" width="250" /></p>
+<p>As a developer community, we should not rely heavily on tools but allow them to help us where needed. That thought should be kept in mind when building solutions for others. We need access to what is necessary at the moment and be able to audit and consolidate later if need be. This practice keeps the community and its resources relevant and accountable.</p>
+<p>The overall thing to consider when using or making tools is how they will help your development community grow, stay current, navigate opportunities, and promote contribution.</p>
+<hr />
+<h2 id="templates">Templates<a class="headerlink" href="#templates" title="Permanent link">&para;</a></h2>
+<p><img alt="&lt;a href=&quot;https://storyset.com/work&quot;&gt;Work illustrations by Storyset&lt;/a&gt;" src="../assets/images/Templates.png" /></p>
+<p>Issues and pull requests (PRs) help promote frequent contributions to your community. When setting up a system for issues and PRs, consider the type, content, and details that you would like others to contribute. Below are highlights of what we use for our templates in GitHub; however, if you choose to use other tools or repositories for your templates these best practices can apply as a blueprint for them as well.</p>
+<h3 id="issues"><ins>Issues</ins><a class="headerlink" href="#issues" title="Permanent link">&para;</a></h3>
+<p>Issues allow the community to help identify opportunities within your project whether it’s a bug, feature request, improvement, or question.</p>
+<h4 id="type-of-issues">Type of Issues<a class="headerlink" href="#type-of-issues" title="Permanent link">&para;</a></h4>
+<p>There are several types of issues to consider when creating templates:</p>
+<ul>
+<li>Bug</li>
+<li>Feature</li>
+<li>General: Not a bug but an issue/problem.</li>
+<li>Custom: This is where you can cater to your community and set up additional issue types for example usage questions, third-party integration, etc.</li>
+</ul>
+<h4 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h4>
+<figure>
+<img alt="A screenshot of an issue template that is not a bug or feature" src="../assets/images/Issue-general.png" />
+<figcaption>General Issue</figcaption>
+</figure>
+<figure>
+<img alt="A screenshot of a custom issue template" src="../assets/images/Issue-custom.png" />
+<figcaption>Custom Issue</figcaption>
+</figure>
+<figure>
+<img alt="A screenshot of a feature issue template" src="../assets/images/Issue-feature.png" />
+<figcaption>Feature Issue</figcaption>
+</figure>
+<h3 id="pull-requests"><ins>Pull Requests</ins><a class="headerlink" href="#pull-requests" title="Permanent link">&para;</a></h3>
+<p>We encourage you to set up PR templates and guidelines for ease of use and consistency. When creating your template consider the workflow of submitting and approving a PR. </p>
+<figure>
+<img alt="A screenshot of a pull request template" src="../assets/images/Pullrequest-ex.png" />
+<figcaption>Pull Request(PR)</figcaption>
+</figure>
+<h4 id="things-to-keep-in-mind"><ins>Things To Keep In Mind</ins><a class="headerlink" href="#things-to-keep-in-mind" title="Permanent link">&para;</a></h4>
+<ol>
+<li>
+<p>Labels provide clarity of the PR’s status in the workflow. Below are status options to consider when you are building templates:</p>
+<ul>
+<li>Work in progress</li>
+<li>Ready for review</li>
+<li>In Review</li>
+<li>PR Feedback</li>
+</ul>
+</li>
+<li>
+<p>Including in the body for the contributor to reference an issue or another PR/ticket is an added option to consider when building your template.</p>
+</li>
+<li>Checklists help with the flow or highlighting important items/techniques that need to be included for a PR to be complete.</li>
+</ol>
+<h3 id="resources"><ins>Resources</ins><a class="headerlink" href="#resources" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/manually-creating-a-single-issue-template-for-your-repository">Creating Issue Templates in GitHub</a> </li>
+<li><a href="https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/creating-a-pull-request-template-for-your-repository">Creating Pull Request Templates in GitHub</a> </li>
+<li><a href="https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/configuring-issue-templates-for-your-repository">Configuring Templates in GitHub</a></li>
+</ul>
+<hr />
+<h2 id="resources_1">Resources<a class="headerlink" href="#resources_1" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="https://polite.technology/preview">Polite Technology</a></li>
+</ul>
+<h2 id="success-stories">Success Stories<a class="headerlink" href="#success-stories" title="Permanent link">&para;</a></h2>
+<h3 id="pangeo">Pangeo<a class="headerlink" href="#pangeo" title="Permanent link">&para;</a></h3>
+<h4 id="what-is-pangeo">What is Pangeo?<a class="headerlink" href="#what-is-pangeo" title="Permanent link">&para;</a></h4>
+<p><a href="https://pangeo.io">Pangeo</a> is first and foremost a community of people working collaboratively to develop open source software and infrastructure to enable open science, specifically focused on big data. The community has pioneered the use of large scale interactive cloud computing.  </p>
+<h4 id="origin-story">Origin story<a class="headerlink" href="#origin-story" title="Permanent link">&para;</a></h4>
+<p>In large part, Pangeo grew out of the <a href="https://xarray.dev">Xarray</a> and <a href="https://dask.org">Dask</a> projects. Xarray is a Python package for working with multidimensional arrays and datasets and Dask is a Python library for parallel computing. In 2016, a small group of developers and “super users” of these projects convened a <a href="https://rabernat.github.io/aospy-workshop/">workshop</a> at Columbia University to discuss the idea of a community project for large scale geoscientific data analysis. Out of this meeting came the name and mission of the Pangeo Project. In the months and years since, the Pangeo community has grown to include a large number of scientists, software developers, and infrastructure providers. </p>
+<h4 id="why-has-pangeo-been-successful">Why has Pangeo been successful?<a class="headerlink" href="#why-has-pangeo-been-successful" title="Permanent link">&para;</a></h4>
+<p>Pangeo’s success can be attributed to five themes:</p>
+<ol>
+<li><strong>Clear mission and brand</strong>: Pangeo grew up to solve a specific set of problems. Its mission statement was simultaneously ambitious and inclusive, and its branding (name, logo, design concepts) facilitated its organic growth.  </li>
+<li><strong>Community focus</strong>: Pangeo’s approach to community engagement was intentionally open and collaborative. Technical conversations were held in the open on <a href="https://github.com/pangeo-data">GitHub</a>, in regular <a href="https://pangeo.io/meeting-notes.html">community meetings</a> that were open to anyone. Over time, Pangeo added specific user support channels like <a href="https://discourse.pangeo.io/">discourse.pangeo.io</a> to crowd source questions and solutions.</li>
+<li><strong>Use case driven development</strong>: The Pangeo community was engaged in the project to solve specific challenges within active areas of geoscientific research. Pangeo helped turn pain points in big data workflows into technical problems that open source software projects could help solve. <a href="https://github.com/dask/distributed/issues/6360">Here’s</a> an example of the kind of interaction this approach fostered, leading to big steps forward for the open source project and motivating research project.</li>
+<li><strong>Integrate and improve whenever possible</strong>: Rather than reflexively developing new projects to solve problems, the Pangeo approach was to first attempt to <a href="https://medium.com/pangeo/the-pangeo-pattern-9a81ca4bad42">improve and integrate existing tools</a>. This resulted in the incremental improvements across the scientific Python ecosystem and avoided further fragmentation of the community.</li>
+<li><strong>Multifunctional development teams</strong>: The Pangeo community is made up of scientists, software engineers, and data/infrastructure providers. When working on complex problems that span multiple software libraries and pieces of infrastructure, having a multifunctional team engaged on a tough problem is key. <a href="https://github.com/dask/distributed/issues/6560">This issue</a> on the Distributed issue tracker exemplifies how productive engagements like this can be.</li>
+</ol>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p><a href="https://orbit.love/blog/a-tactical-guide-to-kickstarting-your-community">The flywheel and building momentum with your community</a>&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.bd41221c.min.js"></script>
+      
+    
+  </body>
+</html>
