@@ -320,18 +320,75 @@ Understanding the impact of the size and the roadmap for your project helps you 
 When interacting with other contributors we suggest that you use methods that help empower a cohesive and inclusive culture.
 
 ### Future Proofing
-As a developer community, we should not rely heavily on tools but allow them to help us where needed. That thought should be kept in mind when building solutions for others. We need access to what is necessary at the moment and be able to audit and consolidate later if need be. This practice keeps the community and its resources relevant and accountable.
+![<a href="https://storyset.com/work">Work illustrations by Storyset</a>](../assets/images/Innovation-amico.png){ align="right" width="250" }
 
-![<a href="https://storyset.com/work">Work illustrations by Storyset</a>](../assets/images/Innovation-amico.png){ width="300" }
+As a developer community, we should not rely heavily on tools but allow them to help us where needed. That thought should be kept in mind when building solutions for others. We need access to what is necessary at the moment and be able to audit and consolidate later if need be. This practice keeps the community and its resources relevant and accountable.
 
 The overall thing to consider when using or making tools is how they will help your development community grow, stay current, navigate opportunities, and promote contribution.
 
 ---
 
 ## Templates
-### Emails
-### Pull Requests
-### READMEs
+![<a href="https://storyset.com/work">Work illustrations by Storyset</a>](../assets/images/Templates.png)
+
+Issues and pull requests (PRs) help promote frequent contributions to your community. When setting up a system for issues and PRs, consider the type, content, and details that you would like others to contribute. Below are highlights of what we use for our templates in GitHub; however, if you choose to use other tools or repositories for your templates these best practices can apply as a blueprint for them as well.
+
+### ^^Issues^^
+Issues allow the community to help identify opportunities within your project whether it’s a bug, feature request, improvement, or question.
+
+#### Type of Issues
+There are several types of issues to consider when creating templates:
+
+- Bug
+- Feature
+- General: Not a bug but an issue/problem.
+- Custom: This is where you can cater to your community and set up additional issue types for example usage questions, third-party integration, etc.
+
+#### Examples
+
+<figure markdown="span">
+![A screenshot of an issue template that is not a bug or feature](../assets/images/Issue-general.png)
+<figcaption>General Issue</figcaption>
+</figure>
+
+<figure markdown="span">
+![A screenshot of a custom issue template](../assets/images/Issue-custom.png)
+<figcaption>Custom Issue</figcaption>
+</figure>
+
+<figure markdown="span">
+![A screenshot of a feature issue template](../assets/images/Issue-feature.png)
+<figcaption>Feature Issue</figcaption>
+</figure>
+
+
+### ^^Pull Requests^^
+We encourage you to set up PR templates and guidelines for ease of use and consistency. When creating your template consider the workflow of submitting and approving a PR. 
+
+<figure markdown="span">
+![A screenshot of a pull request template](../assets/images/Pullrequest-ex.png)
+<figcaption>Pull Request(PR)</figcaption>
+</figure>
+
+#### ^^Things To Keep In Mind^^
+
+1. Labels provide clarity of the PR’s status in the workflow. Below are status options to consider when you are building templates:
+    - Work in progress
+    - Ready for review
+    - In Review
+    - PR Feedback
+
+2. Including in the body for the contributor to reference an issue or another PR/ticket is an added option to consider when building your template.
+3. Checklists help with the flow or highlighting important items/techniques that need to be included for a PR to be complete.
+
+
+### ^^Resources^^
+- [Creating Issue Templates in GitHub](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/manually-creating-a-single-issue-template-for-your-repository) 
+- [Creating Pull Request Templates in GitHub](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/creating-a-pull-request-template-for-your-repository) 
+- [Configuring Templates in GitHub](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/configuring-issue-templates-for-your-repository)
+
+---
+
 ## Resources
 - [Polite Technology](https://polite.technology/preview)
 
